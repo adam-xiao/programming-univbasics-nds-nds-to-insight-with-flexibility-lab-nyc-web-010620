@@ -51,7 +51,7 @@ def movies_with_director_key(name, movies_collection)
   index = 0
 
   while index < movies_collection.length
-    movies_coll << movie_with_director_name(directors_database[index][:name], directors_database[index])
+    movies_coll << movie_with_director_name(movies_collection[index][:name], movies_collection[index])
     index += 1
   end
 
