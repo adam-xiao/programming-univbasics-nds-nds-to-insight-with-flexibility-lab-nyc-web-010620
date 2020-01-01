@@ -30,7 +30,6 @@ def movie_with_director_name(director_name, movie_data)
   }
 end
 # Your code after this point
-  movies_collection[0]
 
 def movies_with_director_key(name, movies_collection)
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
