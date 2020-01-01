@@ -34,8 +34,8 @@ def movie_with_director_name(director_name, movie_data)
 end
 # Your code after this point
 
-ss = movie_with_director_name(directors_database[0][:name], directors_database[0][:movies][0])
-puts ss
+# ss = movie_with_director_name(directors_database[0][:name], directors_database[0][:movies][0])
+# puts ss
 
 def movies_with_director_key(name, movies_collection)
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
@@ -89,6 +89,16 @@ def movies_with_directors_set(source)
   #
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
+  index = 0
+  result = []
+
+  while index < source.length do
+    dir_database = source[index]
+    director_name = dir_database[:name]
+    director_movies = dir_database[:movies]
+
+    result << movies_with_director_key(director_name, director_movies)
+  end
 end
 
 # ----------------    End of Your Code Region --------------------
