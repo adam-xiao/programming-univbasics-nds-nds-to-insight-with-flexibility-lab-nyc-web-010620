@@ -54,7 +54,7 @@ def movies_with_director_key(name, movies_collection)
     movies_coll << movie_with_director_name(movies_collection[index][:name], movies_collection[index])
     index += 1
   end
-
+  movies_coll
 end
 
 
