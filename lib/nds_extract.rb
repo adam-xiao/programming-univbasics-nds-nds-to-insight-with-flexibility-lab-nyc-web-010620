@@ -49,10 +49,10 @@ def movies_with_director_key(name, movies_collection)
   result = []
   movies_coll = movie_with_director_name(director_name, movie_data)
   index = 0
-  while index < 
+  while index <
     movie_with_director_name(director_name, movie_data)
-  
-  
+
+
 end
 
 
