@@ -98,7 +98,9 @@ def movies_with_directors_set(source)
     director_movies = dir_database[:movies]
 
     result << movies_with_director_key(director_name, director_movies)
+    index += 1
   end
+  result
 end
 
 # ----------------    End of Your Code Region --------------------
@@ -110,3 +112,4 @@ def studios_totals(nds)
   movies_with_director_names = flatten_a_o_a(a_o_a_movies_with_director_names)
   return gross_per_studio(movies_with_director_names)
 end
+
