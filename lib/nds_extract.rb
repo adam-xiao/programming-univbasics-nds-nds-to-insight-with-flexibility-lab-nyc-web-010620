@@ -83,9 +83,11 @@ def gross_per_studio(collection)
     movie_coll = collection[index]
 
     if result[movie_coll[:studio]]
-    result[movie_coll[:studio]] += movie_coll[:worldwide_gross]
+      result[movie_coll[:studio]] += movie_coll[:worldwide_gross]
     else
-    result[movie_coll[:studio]] = movie_coll[:worldwide_gross]
+      result[movie_coll[:studio]] = movie_coll[:worldwide_gross]
+    end
+  index += 1
   end
   result
 end
