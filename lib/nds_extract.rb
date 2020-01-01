@@ -31,6 +31,8 @@ def movie_with_director_name(director_name, movie_data)
 end
 # Your code after this point
 
+ss =  movie_with_director_name("Stephen Spielberg", directors_database)
+
 def movies_with_director_key(name, movies_collection)
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
   # of movies and a directors name to the movie_with_director_name method
