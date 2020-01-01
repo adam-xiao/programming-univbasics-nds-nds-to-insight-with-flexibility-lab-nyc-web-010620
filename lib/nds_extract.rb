@@ -48,6 +48,7 @@ def movies_with_director_key(name, movies_collection)
   # movie_with_director_name method
   result = []
   movies_coll = movie_with_director_name(directors_database[0][:name], directors_database)
+  movies_coll
   index = 0
 #
 end
