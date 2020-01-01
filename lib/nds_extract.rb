@@ -34,8 +34,8 @@ def movie_with_director_name(director_name, movie_data)
 end
 # Your code after this point
 
- ss = movie_with_director_name(directors_database[0][:name], directors_database[0][:movies][0])
- puts ss
+# ss = movie_with_director_name(directors_database[0][:name], directors_database[0][:movies][0])
+# puts ss
 
 def movies_with_director_key(name, movies_collection)
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
